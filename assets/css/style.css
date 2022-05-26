@@ -86,6 +86,22 @@ main p {
   display: inline-block;
 }
 
+.container {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+
+}
+.mainPhoto {
+  height: 300px;
+  width: 100%;
+}
+
+.sidePhoto {
+  height: 200px;
+  width: 25%;
+}
+
 footer {
   padding: 20px;
   background-color: #ffffff;
@@ -148,7 +164,7 @@ text-decoration: underline;
   border-right: 5px solid #2aa768;
   height: 150px;
   align-items: center;
-} */
+} 
 
 /* .bio,
 .work {
