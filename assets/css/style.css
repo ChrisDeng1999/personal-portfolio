@@ -58,6 +58,19 @@ header nav ul li a:hover {
   text-decoration: underline;
 }
 
+.hero-image {
+  display: flex;
+  width: 100%;
+  background-image: url("../Images/panda-background.jpg");
+  height: 100vh;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  position: relative;
+  z-index: -1;
+  top:-300px;
+}
+
 main {
   padding: 20px;
   background-color: #ffffff;
@@ -65,7 +78,8 @@ main {
   width: 100%;
   display: flex;
   flex-wrap: wrap;
-  margin-top: 5%;
+  margin-top:-300px;
+  line-height: 200px;
 }
 
 main section {
@@ -73,7 +87,7 @@ main section {
   flex-wrap: wrap;
   justify-content: space-between;
   padding: 15px;
-  font-size: 20px;
+  /* font-size: 20px; */
   text-align: center;
 }
 
@@ -91,17 +105,20 @@ main p {
 .container {
   display: flex;
   flex-wrap: wrap;
-  justify-content: space-between;
-
+  justify-content: center;
 }
 
 img {
   border: 5px solid green;
+  flex-basis: 40%;
 }
 
+img:first-child {
+  flex-basis: 85%;
+}
 .mainPhoto {
   height: 400px;
-  width: 100%;
+  width: 80%;
 }
 
 .sidePhoto {
@@ -143,12 +160,10 @@ text-decoration: underline;
 
 .sidePhoto:hover,
 .mainPhoto:hover {
-  -webkit-border-image: 10px;
-  -moz-border-image: 10px;
   border-radius: 10px;
-  -webkit-box-shadow: 0px 0px 30px 0px #058545;
-  -moz-box-shadow: 0px 0px 30px 0px #2aa768;
-  box-shadow: 0px 0px 30px 0px #2aa768; 
+  -webkit-box-shadow: 0px 0px 50px 0px #058545;
+  -moz-box-shadow: 0px 0px 50px 0px #2aa768;
+  box-shadow: 0px 0px 50px 0px #2aa768; 
 }
 
 #label {
@@ -169,21 +184,36 @@ text-decoration: underline;
   justify-content: space-evenly;
 }
 
-#about,
 #projects {
   display: flex;
   font-size: 40px;
   font-weight: bold;
   float: left;
   border-right: 5px solid #2aa768;
-  height: 150px;
   align-items: center;
+  height: 1000px;
 } 
 
-/* .bio,
-.work {
-  color: black;
+/* #about {
+  height: 200px;
   display: flex;
-  height: 150px;
+  font-weight: bold;
+  float: left;
+  border-right: 5px solid #2aa768;
   align-items: center;
+} */
+section {
+  display: flex;
+
+}
+section h2 {
+  border-right: 5px solid #2aa768;
+  flex-basis: 15%;
+}
+section div {
+  flex-basis: 80%;
+}
+#work {
+  width: 1500px;
+  justify-content: center;
 }

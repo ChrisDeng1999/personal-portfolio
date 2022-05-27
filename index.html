@@ -1,83 +1,101 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Chris Deng Portfolio</title>
-    <link rel="stylesheet" href="http://meyerweb.com/eric/tools/css/reset/">
-    <link rel="stylesheet" href="./assets/css/style.css"/>
-</head>
-<body>
+    <link rel="stylesheet" href="http://meyerweb.com/eric/tools/css/reset/" />
+    <link rel="stylesheet" href="./assets/css/style.css" />
+  </head>
+  <body>
     <header>
-        <h1>Chris Deng</h1>
-        <nav>
-            <ul>
-              <li><a href="#about">About Me</a></li>
-              <li><a href="#projects">Projects</a></li>
-              <li><a href="#contact">Contact Me</a></li>
-            </ul>
-        </nav>
+      <h1>Chris Deng</h1>
+      <nav>
+        <ul>
+          <li><a href="#about">About Me</a></li>
+          <li><a href="#projects">Projects</a></li>
+          <li><a href="#contact">Contact Me</a></li>
+        </ul>
+      </nav>
     </header>
-    
-    <main>               
-        <section>
-            <ul id="about">
-                <p>About Me</p>
-            </ul>   
-            <ul id = "bio">
-                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Eos eaque architecto harum perferendis provident et cumque tempore unde, vel alias iure facilis. Deserunt corrupti rem maxime saepe quam quaerat magnam!</p>
-            </ul>
-        </section>
 
-        <section>
-            <ul id = "projects">
-                <p>Projects</p>
-            </ul>   
-            <ul id = "work">
-                <div class = "container">
-                    <img 
-                    src = "./Images/html-css-js.jpg"
-                    alt = "image of HTML logo, CSS logo, and JS logo"
-                    class = "mainPhoto"
-                    />
-                    <img
-                    src = "./Images/calculator.jpg"
-                    alt = "image of a calculator"
-                    class = "sidePhoto"
-                    />
-                    <img
-                    src = "./Images/snake.jpg"
-                    alt = "image the snake game"
-                    class = "sidePhoto"
-                    />
-                    <img
-                    src = "./Images/panda.jpg"
-                    alt = "image of a panda"
-                    class = "sidePhoto"
-                    />
-                    <img
-                    src = "./Images/stock-photo.jpg"
-                    alt = "image of computer with code on it"
-                    class = "sidePhoto"
-                    />
-                </div>
-            </ul>
-        </section>
+    <div class="hero-image"></div>
+
+    <main>
+      <section>
+        <h2>About Me</h2>
+        <div id="about">
+          <p>
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Fugit illum
+            repellendus porro pariatur dolor, sint delectus magni molestiae
+            quas, unde commodi perspiciatis ab debitis, adipisci expedita id
+            ullam cupiditate! Necessitatibus?
+          </p>
+        </div>
+      </section>
+
+      <section>
+        <h2 id="projects">Projects</h2>
+        <div class="container">
+        <a href="#" class="project" id="project1">
+            <div>
+                <h3>Project 1</h3>
+            </div>
+        </a>
+          <img
+            src="./assets/Images/html-css-js.jpg"
+            alt="image of HTML logo, CSS logo, and JS logo"
+            class="mainPhoto"
+          />
+          <img
+            src="./assets/Images/calculator.jpg"
+            alt="image of a calculator"
+            class="sidePhoto"
+          />
+          <img
+            src="./assets/Images/snake.jpg"
+            alt="image the snake game"
+            class="sidePhoto"
+          />
+          <img
+            src="./assets/Images/panda.jpg"
+            alt="image of a panda"
+            class="sidePhoto"
+          />
+          <img
+            src="./assets/Images/stock-photo.jpg"
+            alt="image of computer with code on it"
+            class="sidePhoto"
+          />
+        </div>
+      </section>
     </main>
-    
-    <div class = "contact">
-        <nav>
-            <ul id = "label">
-                <li>Contact Me</li>
-            </ul>   
-            <ul id ="info">
-                <li><a href="https://github.com/ChrisDeng1999?tab=repositories" target="_blank">GitHub</a></li>
-                <li><a href="https://www.linkedin.com/in/chris-deng-0b4101176/" target="_blank">LinkedIn</a></li>
-                <li><a>Cdeng1999@gmail.com</a></li>
-                <li><a>626-823-7451</a></li>
-            </ul>
-        </nav>
+
+    <div class="contact" id="contact">
+      <nav>
+        <ul id="label">
+          <li>Contact Me</li>
+        </ul>
+        <ul id="info">
+          <li>
+            <a
+              href="https://github.com/ChrisDeng1999?tab=repositories"
+              target="_blank"
+              >GitHub</a
+            >
+          </li>
+          <li>
+            <a
+              href="https://www.linkedin.com/in/chris-deng-0b4101176/"
+              target="_blank"
+              >LinkedIn</a
+            >
+          </li>
+          <li><a>Cdeng1999@gmail.com</a></li>
+          <li><a>626-823-7451</a></li>
+        </ul>
+      </nav>
     </div>
-</body>
+  </body>
 </html>
