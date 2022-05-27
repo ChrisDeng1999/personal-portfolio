@@ -265,7 +265,7 @@ section h2 {
   padding-right: 34px;
 }
 
-@media screen and (max-width: 992px) {
+/* @media screen and (max-width: 992px) {
   .container {
     width: 50%;
   }
@@ -276,4 +276,4 @@ section h2 {
   .container {
     width: 100%;
   }
-}
+} */
