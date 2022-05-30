@@ -9,20 +9,24 @@ body {
   overflow-y: scroll;
   overflow-x: hidden;
 }
-
 h1 {
   display: inline-block;
   font-size: 48px;
   margin-left: 135px;
 }
-
 h2 {
   font-size: 40px;
   float: left;
   color: #07ff83;
   justify-content: center;
 }
-
+section {
+  display: flex;
+}
+section h2 {
+  border-right: 5px solid #07ff83;
+  flex-basis: 15%;
+}
 h3 {
   font-size: 20px;
   color: #ffffff;
@@ -30,7 +34,6 @@ h3 {
   height: 20px;
   line-height: 20px;
 }
-
 header {
   padding: 20px;
   background-color: #369c64;
@@ -41,31 +44,26 @@ header {
   position: absolute;
   top: 0;
 }
-
 header nav {
   padding-top: 15px;
   margin-right: 20px;
   float: right;
   font-size: 20px;
 }
-
 header nav li {
   list-style-type: none;
   display: inline-block;
   margin: 0px 30px;
 }
-
 header a {
   text-decoration: none;
   display: inline-block;
   color: black;
 }
-
 header nav ul li a:hover {
   color: white;
   text-decoration: underline;
 }
-
 .hero-image {
   display: flex;
   width: 100%;
@@ -79,7 +77,6 @@ header nav ul li a:hover {
   top: -300px;
   padding-right: 40px;
 }
-
 .my-image {
   display: flex;
   width: 25%;
@@ -93,34 +90,6 @@ header nav ul li a:hover {
   top: 430px;
   left: 50px;
 }
-
-.project {
-  background-position: center;
-  background-repeat: no-repeat;
-  background-size: cover;
-  position: relative;
-}
-
-#project1 {
-  background-image: url("../Images/html-css-js.jpg");
-}
-
-#project2 {
-  background-image: url("../Images/calculator.jpg");
-}
-
-#project3 {
-  background-image: url("../Images/snake.jpg");
-}
-
-#project4 {
-  background-image: url("../Images/panda.jpg");
-}
-
-#project5 {
-  background-image: url("../Images/stock-photo.jpg");
-}
-
 main {
   padding: 20px;
   background-color: rgb(155, 154, 154);
@@ -129,14 +98,12 @@ main {
   flex-wrap: wrap;
   margin-top: -300px;
 }
-
 #about-me {
   flex-basis: 318px;
   line-height: 200px;
   justify-content: space-between;
   text-align: center;
 }
-
 #about {
   line-height: 30px;
   display: flex;
@@ -148,25 +115,15 @@ main {
   font-weight: bold;
   text-align: center;
 }
-
 a {
   text-decoration: none;
   display: inline-block;
 }
-
-.container {
-  display: flex;
-  flex-wrap: wrap;
-  justify-content: center;
-  padding-left: 100px;
-  flex-basis: 60%;
-}
-
-.container a {
-  margin: 20px;
-}
-
 .project {
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  position: relative;
   border: 5px solid #07ff83;
   flex-basis: 40%;
   display: flex;
@@ -178,48 +135,65 @@ a {
   background-size: cover;
   position: relative;
 }
-
 .project:first-child {
   flex-basis: 84.5%;
 }
-
+.container {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  padding-left: 100px;
+  flex-basis: 60%;
+}
+.container a {
+  margin: 20px;
+}
+#project1 {
+  background-image: url("../Images/html-css-js.jpg");
+}
+#project2 {
+  background-image: url("../Images/calculator.jpg");
+}
+#project3 {
+  background-image: url("../Images/snake.jpg");
+}
+#project4 {
+  background-image: url("../Images/panda.jpg");
+}
+#project5 {
+  background-image: url("../Images/stock-photo.jpg");
+}
 .contact {
   padding: 0 20px;
   color: #07ff83;
   width: 100%;
   bottom: 0;
 }
-
 .contact nav {
   padding: 15px;
   font-size: 20px;
   text-align: center;
 }
-
 .contact nav li {
   list-style-type: none;
   display: inline-block;
   margin: 0px 30px;
 }
-
 .contact a {
   text-decoration: none;
   display: inline-block;
   color: black;
 }
-
 .contact nav ul li a:hover {
   color: #07ff83;
   text-decoration: underline;
 }
-
 .project:hover {
   border-radius: 10px;
   -webkit-box-shadow: 0px 0px 50px 0px #058545;
   -moz-box-shadow: 0px 0px 50px 0px #07ff83;
   box-shadow: 0px 0px 50px 0px #07ff83;
 }
-
 #label {
   display: flex;
   font-size: 40px;
@@ -229,15 +203,14 @@ a {
   position: relative;
   height: 150px;
   align-items: center;
+  padding-right: 34px;
 }
-
 #info {
   display: flex;
   height: 150px;
   align-items: center;
   justify-content: space-evenly;
 }
-
 #projects {
   display: flex;
   font-size: 40px;
@@ -248,32 +221,28 @@ a {
   height: 1000px;
 }
 
-section {
-  display: flex;
-}
-section h2 {
-  border-right: 5px solid #07ff83;
-  flex-basis: 15%;
-}
 
-#work {
-  width: 1500px;
-  justify-content: center;
-}
-
-#label {
-  padding-right: 34px;
-}
-
-/* @media screen and (max-width: 992px) {
+@media screen and (max-width: 992px) {
   .container {
+    flex: 0 0 50%;
     width: 50%;
   }
+  #project1 {
+    flex: 0 0 40%;
+  }
+  main,
+  nav {
+    float: none;
+    width: 100%;
+  }
 }
-
 
 @media screen and (max-width: 768px) {
   .container {
     width: 100%;
   }
-} */
+  main,
+  nav {
+    flex-direction: column;
+  }
+}
